@@ -28,3 +28,4 @@ runs:
         mkdir $HOME/bin
         mv helmfile $HOME/bin
         echo "$HOME/bin" >> $GITHUB_PATH
+      shell: bash
