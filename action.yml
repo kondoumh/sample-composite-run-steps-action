@@ -21,3 +21,10 @@ runs:
       shell: bash
     - run: ${{ github.action_path }}/install.sh
       shell: bash
+    - run: |
+        curl -LO https://github.com/roboll/helmfile/releases/download/v0.135.0/helmfile_linux_amd64
+        mv helmfile_linux_amd64 helmfile
+        chmod +x helmfile
+        mkdir $HOME/bin
+        mv helmfile $HOME/bin
+        echo "$HOME/bin" >> $GITHUB_PATH
