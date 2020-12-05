@@ -19,11 +19,5 @@ runs:
       shell: bash
     - run: ${{ github.action_path }}/goodbye.sh
       shell: bash
-    - run: curl -LO https://github.com/roboll/helmfile/releases/download/v0.135.0/helmfile_linux_amd64
-      shell: bash
-    - run: mv helmfile_linux_amd64 helmfile
-      shell: bash
-    - run:  chmod +x helmfile
-      shell: bash
-    - run: ls -l
+    - run: ${{ github.action_path }}/install.sh
       shell: bash
