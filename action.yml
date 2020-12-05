@@ -25,5 +25,5 @@ runs:
       shell: bash
     - run:  chmod +x helmfile
       shell: bash
-    - run: sudo mv helmfile /user/local/bin
+    - run: ls -l
       shell: bash
