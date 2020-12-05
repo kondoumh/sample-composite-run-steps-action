@@ -4,4 +4,4 @@ chmod +x helmfile
 ls -l
 mkdir $HOME/bin
 cp helmfile $HOME/bin
-echo ::add-path::$HOME/bin
+echo "$HOME/bin" >> $GITHUB_PATH
