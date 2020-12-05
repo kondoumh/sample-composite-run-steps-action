@@ -21,6 +21,3 @@ runs:
       shell: bash
     - run: ${{ github.action_path }}/install.sh
       shell: bash
-    - uses: kondoumh/sandbox-container-action@master
-      with:
-        who-to-greet: 'Mona the Octocat'
